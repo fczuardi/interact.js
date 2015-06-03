@@ -697,6 +697,7 @@
     }
 
     function getElementRect (element) {
+        console.log('getElementRect ' + element);
         var scroll = isIOS7orLower
                 ? { x: 0, y: 0 }
                 : getScrollXY(getWindow(element)),
